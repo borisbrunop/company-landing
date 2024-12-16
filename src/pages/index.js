@@ -277,7 +277,21 @@ const Index = () => {
           reach out to us using the button below
         </p>
         <p className="mt-8">
-          <Button size="xl">Contact Us</Button>
+          <a
+            href="mailto:info@lineasgh.com"
+            type="button"
+            style={{ textDecoration: 'none' }}
+            className={`
+              py-5 px-16 text-lg
+              bg-primary
+              hover:bg-primary-darker
+              hover:text-white
+              rounded
+              text-white
+          `}
+          >
+            Contact Us
+          </a>
         </p>
       </section>
     </Layout>
