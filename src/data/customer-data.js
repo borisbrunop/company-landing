@@ -1,26 +1,9 @@
 export default [
   {
-    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing',
-    content:
-      'Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Sit amet consectetur adipiscing elit duis.',
+    title: 'Gilberto Hincapie Jimenez',
+    content: 'CEO & Founder',
     customerName: 'Jane Doe',
-    customerTitle: 'Director of Research and Data',
-    customerImage: 'https://placeimg.com/150/150/people'
+    customerTitle: 'gerencia@lineasgh.com',
+    customerImage: 'https://conaves.com.co/wp-content/uploads/2024/09/GIL1.png',
   },
-  {
-    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing',
-    content:
-      'Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Sit amet consectetur adipiscing elit duis.',
-    customerName: 'John Doe',
-    customerTitle: 'Director of Research and Data',
-    customerImage: 'https://placeimg.com/150/150/people'
-  },
-  {
-    title: 'Lorem ipsum dolor sit amet, consectetur adipiscing',
-    content:
-      'Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Sit amet consectetur adipiscing elit duis.',
-    customerName: 'Jane Smith',
-    customerTitle: 'Director of Research and Data',
-    customerImage: 'https://placeimg.com/150/150/people'
-  }
 ];
