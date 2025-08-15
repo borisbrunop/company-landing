@@ -10,3 +10,7 @@ a:hover {
 @tailwind components;
 
 @tailwind utilities;
+
+body {
+  background-color: #F6EEDD;
+}
