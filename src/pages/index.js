@@ -26,7 +26,7 @@ const Index = () => {
             <h1
               className={`text-4xl lg:text-5xl xl:text-5xl font-bold leading-none ${themeStyles.textSecondary}`}
             >
-              International Products Global Commodities
+              {"International Products Global Commodities"}
             </h1>
             {/* <p className="text-xl lg:text-2xl mt-6 font-semibold text-primary">
               Company manages and operation Oil & Chemical Tanker vessels IMO Type II/III, Container

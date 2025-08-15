@@ -15,11 +15,8 @@ module.exports = {
         background: {
           lighter: '#F6EEDD',
           default: '#DDD8CA',
-          darker: '#9A8F7B'
+          darker: '#A48E7B'
         },
-        bgSecondary: {
-          default: '#A48E7B',
-        }
       }
     }
   }
