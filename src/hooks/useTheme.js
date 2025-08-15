@@ -32,7 +32,11 @@ const darkTheme = {
   border: 'border-primary-darker'
 };
 
-const ThemeContext = createContext();
+const ThemeContext = createContext({
+    theme: 'light',
+    themeStyles: lightTheme,
+    toggleTheme: () => {}
+});
 
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState('light');
