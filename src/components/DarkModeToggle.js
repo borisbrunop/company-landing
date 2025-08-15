@@ -1,7 +1,7 @@
 import React from 'react';
 import { useTheme } from '../hooks/useTheme';
-import Moon from '../icons/moon';
-import Sun from '../icons/sun';
+import Moon from '../icons/Moon.js';
+import Sun from '../icons/Sun.js';
 
 const DarkModeToggle = () => {
   const { theme, toggleTheme } = useTheme();
