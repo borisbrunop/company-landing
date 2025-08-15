@@ -16,10 +16,11 @@ module.exports = {
           lighter: '#F6EEDD',
           default: '#DDD8CA',
           darker: '#9A8F7B'
+        },
+        bgSecondary: {
+          default: '#A48E7B',
         }
       }
     }
-  },
-  variants: {},
-  plugins: []
+  }
 };

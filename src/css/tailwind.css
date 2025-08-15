@@ -9,8 +9,23 @@ a:hover {
 
 @tailwind components;
 
+@layer components {
+  .dark {
+    --text-primary: #C6C3B6;
+    --text-secondary: #8B4D52;
+    --bg-background-lighter: #1a202c;
+    --bg-background-darker: #1a202c;
+    --text-color: white;
+  }
+
+  body {
+    background-color: var(--bg-background-lighter);
+    color: var(--text-color, #3F504E);
+  }
+}
+
 @tailwind utilities;
 
-body {
-  background-color: #F6EEDD;
+* {
+  transition: background-color 0.2s ease, color 0.2s ease;
 }

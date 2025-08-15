@@ -1,48 +1,28 @@
 import React from 'react';
+import { useTheme } from '../../hooks/useTheme';
 
-const Footer = () => (
-  <footer className="container mx-auto py-16 px-3 mt-48 mb-8 bg-background-lighter text-gray-800">
-    <div className="flex -mx-3">
-      <div className="flex px-3 items-center w-full flex-col">
-        <p className="mt-5 text-center text-secondary-lighter">
-          {' '}
-          {/* <strong>Phone Number:</strong>  */}
-          {/* +58 414-1123608 */}
-          <br />
-          {/* <strong>Email:</strong>  */}
-          gerencia@interpgc.com
-          <br />
-          {/* <strong>Location:</strong>  */}
-          Panama City, Panama
-        </p>
+const Footer = () => {
+  const { themeStyles } = useTheme();
+
+  return (
+    <footer className={`container mx-auto py-16 px-3 mt-10 md:mt-48 mb-8 ${themeStyles.background} ${themeStyles.text}`}>
+      <div className="flex -mx-3">
+        <div className="flex px-3 items-center w-full flex-col">
+          <a
+            href="mailto:gerencia@interpgc.com"
+            type="button"
+            style={{ textDecoration: 'none' }}
+            className={`mt-5 text-center ${themeStyles.textSecondary} hover:${themeStyles.text}`}
+          >
+            gerencia@interpgc.com
+          </a>
+          <p className={`text-center ${themeStyles.textSecondary}`}>
+            Panama City, Panama
+          </p>
+        </div>
       </div>
-      {/* <div className="flex-1 px-3">
-        <h2 className="text-lg font-semibold">Important Links</h2>
-        <ul className="mt-4 leading-loose">
-          <li>
-            <a href="https://codebushi.com">Terms &amp; Conditions</a>
-          </li>
-          <li>
-            <a href="https://codebushi.com">Privacy Policy</a>
-          </li>
-        </ul>
-      </div>
-      <div className="flex-1 px-3">
-        <h2 className="text-lg font-semibold">Social Media</h2>
-        <ul className="mt-4 leading-loose">
-          <li>
-            <a href="https://dev.to/changoman">Dev.to</a>
-          </li>
-          <li>
-            <a href="https://twitter.com/HuntaroSan">Twitter</a>
-          </li>
-          <li>
-            <a href="https://github.com/codebushi/gatsby-starter-lander">GitHub</a>
-          </li>
-        </ul>
-      </div> */}
-    </div>
-  </footer>
-);
+    </footer>
+  );
+};
 
 export default Footer;
