@@ -25,13 +25,13 @@ const Header = () => {
           </AnchorLink>
         </div>
         <div className="flex mt-4 sm:mt-0">
-          <AnchorLink offset={100} className={`px-4 ${themeStyles.textSecondary}`} href="#features">
+          <AnchorLink offset={100} className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`} href="#features">
             Policies
           </AnchorLink>
-          <AnchorLink offset={100} className={`px-4 ${themeStyles.textSecondary}`} href="#services">
+          <AnchorLink offset={100} className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`} href="#services">
             Services
           </AnchorLink>
-          <AnchorLink offset={200} className={`px-4 ${themeStyles.textSecondary}`} href="#contact">
+          <AnchorLink offset={200} className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`} href="#contact">
             Contact
           </AnchorLink>
           <DarkModeToggle />
