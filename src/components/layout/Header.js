@@ -5,10 +5,13 @@ import logoLight from '../../images/logo-light.png';
 import logoDark from '../../images/logo-dark.png';
 import DarkModeToggle from '../DarkModeToggle';
 
+const pathnamesWithoutHeader = ['/auth-docs', '/admin'];
+
 const Header = () => {
   const { themeStyles, theme } = useTheme();
+  const path = window.location.pathname;
 
-    useEffect(() => {
+  useEffect(() => {
     if (theme === 'dark') {
       document.body.style.backgroundColor = '#2E3B38';
     } else {
@@ -16,22 +19,45 @@ const Header = () => {
     }
   }, [theme]);
 
+  if (pathnamesWithoutHeader.includes(path)) {
+    return null;
+  }
+
   return (
-    <header className={`sticky top-0 ${themeStyles.headerBg} shadow`} style={{ boxShadow: '0 10px 28px rgba(0,0,0,.28)' }}>
+    <header
+      className={`sticky top-0 ${themeStyles.headerBg} shadow`}
+      style={{ boxShadow: '0 10px 28px rgba(0,0,0,.28)' }}
+    >
       <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
         <div className="flex items-center text-2xl">
           <AnchorLink offset={100} className="px-4" href="#home">
-            <img className="w-24 h-auto object-cover " src={theme === "dark" ? logoLight : logoDark} alt="logo" />
+            <img
+              className="w-24 h-auto object-cover "
+              src={theme === 'dark' ? logoLight : logoDark}
+              alt="logo"
+            />
           </AnchorLink>
         </div>
         <div className="flex mt-4 sm:mt-0">
-          <AnchorLink offset={100} className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`} href="#features">
+          <AnchorLink
+            offset={100}
+            className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`}
+            href="#features"
+          >
             Policies
           </AnchorLink>
-          <AnchorLink offset={100} className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`} href="#services">
+          <AnchorLink
+            offset={100}
+            className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`}
+            href="#services"
+          >
             Services
           </AnchorLink>
-          <AnchorLink offset={200} className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`} href="#contact">
+          <AnchorLink
+            offset={200}
+            className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`}
+            href="#contact"
+          >
             Contact
           </AnchorLink>
           <DarkModeToggle />

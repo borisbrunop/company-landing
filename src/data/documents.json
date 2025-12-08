@@ -1,0 +1,23 @@
+[
+  {
+    "id": "A4J2H6P1",
+    "date": "2025-10-15",
+    "type": "Certificado de Garantía",
+    "client": "Juan Pérez",
+    "status": "Active"
+  },
+  {
+    "id": "Z7K3M9T4",
+    "date": "2025-11-20",
+    "type": "Factura",
+    "client": "Pablo Pérez",
+    "status": "Active"
+  },
+  {
+    "id": "B8W1L5Q0",
+    "date": "2025-12-01",
+    "type": "Certificado",
+    "client": "Andres Pérez",
+    "status": "Active"
+  }
+]
