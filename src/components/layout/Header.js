@@ -1,15 +1,23 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
+import LogoIcon from '../../svg/LogoIcon';
+import Button from '../Button';
 import { useTheme } from '../../hooks/useTheme';
-import logoLight from '../../images/logo-light.png';
-import logoDark from '../../images/logo-dark.png';
 import DarkModeToggle from '../DarkModeToggle';
 
 const pathnamesWithoutHeader = ['/auth-docs', '/admin'];
 
 const Header = () => {
   const { themeStyles, theme } = useTheme();
-  const path = window.location.pathname;
+  // Initialize path safely
+  const [path, setPath] = useState('');
+
+  useEffect(() => {
+    // This runs only in the browser, where window is available
+    if (typeof window !== 'undefined') {
+      setPath(window.location.pathname);
+    }
+  }, []);
 
   useEffect(() => {
     if (theme === 'dark') {
@@ -19,48 +27,53 @@ const Header = () => {
     }
   }, [theme]);
 
+  // If we are on a page that shouldn't have a header, return null
   if (pathnamesWithoutHeader.includes(path)) {
     return null;
   }
 
   return (
     <header
-      className={`sticky top-0 ${themeStyles.headerBg} shadow`}
-      style={{ boxShadow: '0 10px 28px rgba(0,0,0,.28)' }}
+      className={`sticky top-0 ${themeStyles.headerBg} shadow-lg z-50 transition-colors duration-200`}
     >
       <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
-        <div className="flex items-center text-2xl">
-          <AnchorLink offset={100} className="px-4" href="#home">
-            <img
-              className="w-24 h-auto object-cover "
-              src={theme === 'dark' ? logoLight : logoDark}
-              alt="logo"
-            />
-          </AnchorLink>
+        <div className="flex items-center text-2xl mb-4 sm:mb-0">
+          <div className="w-12 mr-3">
+            <LogoIcon />
+          </div>
+          <div className={`font-bold ${themeStyles.headerText}`}>IPGC</div>
         </div>
-        <div className="flex mt-4 sm:mt-0">
+        <div className="flex items-center mt-4 sm:mt-0">
           <AnchorLink
-            offset={100}
             className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`}
             href="#features"
           >
-            Policies
+            Servicios
           </AnchorLink>
           <AnchorLink
-            offset={100}
             className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`}
             href="#services"
           >
-            Services
+            Nosotros
           </AnchorLink>
           <AnchorLink
-            offset={200}
             className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`}
-            href="#contact"
+            href="#stats"
           >
-            Contact
+            Estadísticas
           </AnchorLink>
-          <DarkModeToggle />
+          <AnchorLink
+            className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`}
+            href="#testimonials"
+          >
+            Clientes
+          </AnchorLink>
+          <div className="hidden md:block">
+            <DarkModeToggle />
+          </div>
+          <div className="hidden md:block ml-4">
+            <Button className="text-sm">Contactanos</Button>
+          </div>
         </div>
       </div>
     </header>

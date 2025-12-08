@@ -1,11 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTheme } from '../../hooks/useTheme';
 
 const pathnamesWithoutFooter = ['/auth-docs', '/admin'];
 
 const Footer = () => {
   const { themeStyles } = useTheme();
-  const path = window.location.pathname;
+  const [path, setPath] = useState('');
+
+  useEffect(() => {
+    // Check if window is defined (client-side only)
+    if (typeof window !== 'undefined') {
+      setPath(window.location.pathname);
+    }
+  }, []);
 
   if (pathnamesWithoutFooter.includes(path)) {
     return null;
