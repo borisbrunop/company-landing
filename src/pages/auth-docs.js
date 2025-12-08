@@ -75,7 +75,7 @@ const AuthDocs = () => {
 
   return (
     <Layout>
-      <section className="pt-20 pb-20 min-h-screen flex flex-col items-center justify-center">
+      <section className="min-h-screen flex flex-col items-center justify-center">
         <div className="container mx-auto px-4 max-w-2xl">
           {loading && (
             <Card className="text-center">
@@ -89,7 +89,7 @@ const AuthDocs = () => {
           )}
 
           {!loading && isValid && docData && (
-            <Card className="text-center border-t-8 border-green-500">
+            <Card className="text-center">
               <div className="mb-6">
                 <svg
                   className="w-20 h-20 text-green-500 mx-auto"
@@ -157,7 +157,7 @@ const AuthDocs = () => {
           )}
 
           {!loading && !isValid && (
-            <Card className="text-center border-t-8 border-red-500">
+            <Card className="text-center">
               <div className="mb-6">
                 <svg
                   className="w-20 h-20 text-red-500 mx-auto"

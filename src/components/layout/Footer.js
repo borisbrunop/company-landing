@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTheme } from '../../hooks/useTheme';
 
-const pathnamesWithoutFooter = ['/auth-docs', '/admin'];
+const pathnamesWithoutFooter = ['/auth-docs/', '/admin/'];
 
 const Footer = () => {
   const { themeStyles } = useTheme();
@@ -13,10 +13,6 @@ const Footer = () => {
       setPath(window.location.pathname);
     }
   }, []);
-
-  if (pathnamesWithoutFooter.includes(path)) {
-    return null;
-  }
 
   return (
     <footer
