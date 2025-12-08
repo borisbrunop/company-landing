@@ -26,7 +26,7 @@ const Index = () => {
             <h1
               className={`text-4xl lg:text-5xl xl:text-5xl font-bold leading-none ${themeStyles.textSecondary}`}
             >
-              {"International Products Global Commodities"}
+              {'International Products Global Commodities'}
             </h1>
             {/* <p className="text-xl lg:text-2xl mt-6 font-semibold text-primary">
               Company manages and operation Oil & Chemical Tanker vessels IMO Type II/III, Container
@@ -82,7 +82,7 @@ const Index = () => {
           </div>
         </div>
       </section>
-      <section className="py-20 lg:pb-40 lg:pt-48">
+      <section className="pt-48">
         <div className="container mx-auto text-center">
           <h2 id="features" className={`text-5xl font-semibold ${themeStyles.textSecondary}`}>
             Policies
@@ -108,7 +108,9 @@ const Index = () => {
             </div>
             <div className="flex-1 px-3">
               <Card className="mb-8">
-                <p className={`font-semibold text-xl ${themeStyles.textSecondary}`}>Safety Policy</p>
+                <p className={`font-semibold text-xl ${themeStyles.textSecondary}`}>
+                  Safety Policy
+                </p>
                 <p className={`mt-4 text-sm ${themeStyles.textPrimary}`}>
                   The Management of IPGC CONSULTORES SA is unequivocally committed to implementing
                   all necessary precautions and measures during the operation of our managed vessels
@@ -200,8 +202,10 @@ const Index = () => {
           </div>
         </div>
       </section>
-      <div id="services" className="w-full flex justify-center">
-        <h2 className={`text-5xl font-semibold ${themeStyles.textSecondary}`}>Services</h2>
+      <div className="w-full flex justify-center pt-48">
+        <h2 id="services" className={`text-5xl font-semibold ${themeStyles.textSecondary}`}>
+          Services
+        </h2>
       </div>
       <SplitSection
         primarySlot={
@@ -367,22 +371,23 @@ const Index = () => {
           </div>
         </div>
       </section> */}
-      <section
-        id="contact"
-        className={`container mx-auto md:my-20  md:py-24 px-2`}
-      >
-        <div className={`container mx-auto my-20  py-24 ${themeStyles.cardBg} rounded-lg text-center`}>
-        <h3 className="text-5xl font-semibold text-background-lighter">Get in Touch</h3>
-        <p className="mt-8 md:px-40 text-xl font-light text-background-lighter">
-          Have a question, comment, or suggestion? We'd love to hear from you. Please feel free to
-          reach out to us using the button below
-        </p>
-        <p className="mt-8">
-          <a
-            href="mailto:gerencia@interpgc.com"
-            type="button"
-            style={{ textDecoration: 'none' }}
-            className={`
+      <section className={`container mx-auto md:my-20  md:py-24 px-2`}>
+        <div
+          className={`container mx-auto my-20  py-24 ${themeStyles.cardBg} rounded-lg text-center`}
+        >
+          <h3 id="contact" className="text-5xl font-semibold text-background-lighter">
+            Get in Touch
+          </h3>
+          <p className="mt-8 md:px-40 text-xl font-light text-background-lighter">
+            Have a question, comment, or suggestion? We'd love to hear from you. Please feel free to
+            reach out to us using the button below
+          </p>
+          <p className="mt-8">
+            <a
+              href="mailto:gerencia@interpgc.com"
+              type="button"
+              style={{ textDecoration: 'none' }}
+              className={`
               py-5 px-16 text-lg
               hover:${themeStyles.buttonHoverBg}
               hover:${themeStyles.buttonHoverText}
@@ -390,11 +395,11 @@ const Index = () => {
               ${themeStyles.buttonBg}
               ${themeStyles.buttonText}
               `}
-              >
-            Contact Us
-          </a>
-        </p>
-            </div>
+            >
+              Contact Us
+            </a>
+          </p>
+        </div>
       </section>
     </Layout>
   );

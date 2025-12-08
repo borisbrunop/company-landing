@@ -5,6 +5,7 @@ import LogoDark from '../../images/logo-dark.png';
 import Button from '../Button';
 import { useTheme } from '../../hooks/useTheme';
 import DarkModeToggle from '../DarkModeToggle';
+import { Link } from 'gatsby';
 
 const pathnamesWithoutHeader = ['/auth-docs/', '/admin/'];
 
@@ -35,48 +36,44 @@ const Header = () => {
       className={`sticky top-0 ${themeStyles.headerBg} shadow-lg z-50 transition-colors duration-200`}
     >
       <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
-        <div className="flex items-center text-2xl mb-4 sm:mb-0">
+        <div className="flex items-center text-2xl sm:mb-0 mb-2">
           <div className="w-12 mr-3">
-            <img src={theme === 'dark' ? LogoLight : LogoDark} alt="IPGC Logo" />
+            <Link to="/">
+              <img src={theme === 'dark' ? LogoLight : LogoDark} alt="IPGC Logo" />
+            </Link>
           </div>
         </div>
-        <div className="flex items-center mt-4 sm:mt-0">
-          {!isPathnameWithoutHeader && (
-            <>
-              <AnchorLink
-                className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`}
-                href="#features"
-              >
-                Servicios
-              </AnchorLink>
-              <AnchorLink
-                className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`}
-                href="#services"
-              >
-                Nosotros
-              </AnchorLink>
-              <AnchorLink
-                className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`}
-                href="#stats"
-              >
-                Estadísticas
-              </AnchorLink>
-              <AnchorLink
-                className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`}
-                href="#testimonials"
-              >
-                Clientes
-              </AnchorLink>
-            </>
-          )}
-          <div className="hidden md:block">
-            <DarkModeToggle />
-          </div>
-          {!isPathnameWithoutHeader && (
-            <div className="hidden md:block ml-4">
-              <Button className="text-sm">Contactanos</Button>
+        <div className="flex items-center w-full overflow-x-auto pb-2 sm:pb-0 scrollbar-hide">
+          <div className="w-fit flex items-center whitespace-nowrap min-w-min ml-auto">
+            {!isPathnameWithoutHeader && (
+              <>
+                <AnchorLink
+                  offset={100}
+                  className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`}
+                  href="#features"
+                >
+                  Policies
+                </AnchorLink>
+                <AnchorLink
+                  offset={100}
+                  className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`}
+                  href="#services"
+                >
+                  Services
+                </AnchorLink>
+                <AnchorLink
+                  offset={200}
+                  className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`}
+                  href="#contact"
+                >
+                  Contact
+                </AnchorLink>
+              </>
+            )}
+            <div className="">
+              <DarkModeToggle />
             </div>
-          )}
+          </div>
         </div>
       </div>
     </header>

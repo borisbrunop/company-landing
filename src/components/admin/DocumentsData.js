@@ -24,7 +24,7 @@ const DocumentsData = ({ setIsCreating }) => {
   const qrBgColor = theme === 'dark' ? '#2E3B38' : '#F6EEDD';
 
   useEffect(() => {
-    const q = query(collection(db, 'documents'), orderBy('date', 'asc'));
+    const q = query(collection(db, 'documents'), orderBy('date', 'desc'));
     const unsubscribe = onSnapshot(
       q,
       (snapshot) => {

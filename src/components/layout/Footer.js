@@ -16,7 +16,7 @@ const Footer = () => {
 
   return (
     <footer
-      className={`container mx-auto py-16 px-3 mt-10 md:mt-48 mb-8 ${themeStyles.background} ${themeStyles.text}`}
+      className={`container mx-auto py-16 px-3 mt-10 md:mt-20 mb-8 ${themeStyles.background} ${themeStyles.text}`}
     >
       <div className="flex -mx-3">
         <div className="flex px-3 items-center w-full flex-col">
