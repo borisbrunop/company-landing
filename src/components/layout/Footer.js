@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useTheme } from '../../hooks/useTheme';
+import { useTranslation } from 'react-i18next';
 
 const pathnamesWithoutFooter = ['/auth-docs/', '/admin/'];
 
 const Footer = () => {
   const { themeStyles } = useTheme();
   const [path, setPath] = useState('');
+  const { t } = useTranslation();
 
   useEffect(() => {
     // Check if window is defined (client-side only)
@@ -28,7 +30,7 @@ const Footer = () => {
           >
             gerencia@interpgc.com
           </a>
-          <p className={`text-center ${themeStyles.textSecondary}`}>Panama City, Panama</p>
+          <p className={`text-center ${themeStyles.textSecondary}`}>{t('footer.location')}</p>
         </div>
       </div>
     </footer>

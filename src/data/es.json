@@ -1,0 +1,115 @@
+{
+  "header": {
+    "policies": "Políticas",
+    "services": "Servicios",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Productos Internacionales Commodities Globales",
+    "description_1": {
+      "1": "En ",
+      "2": "IPGC CONSULTORES SA",
+      "3": ", nos posicionamos como ",
+      "4": "líderes globales en la comercialización de petróleo crudo y sus derivados, ",
+      "5": "actuando como el ",
+      "6": "puente estratégico ",
+      "7": "que conecta a los productores de energía de primer nivel con los mercados de demanda más dinámicos del mundo. Nuestra trayectoria es el resultado de ",
+      "8": "décadas de operaciones estratégicas y una profunda especialización ",
+      "9": "en las complejidades de la cadena internacional de suministro de hidrocarburos."
+    },
+    "description_2": {
+      "1": "Nuestra ",
+      "2": "experiencia abarca desde la sofisticada logística marítima",
+      "3": "—gestionando y operando una flota diversa que incluye buques VLCC, Suezmax, Aframax y MR/LR, bajo acuerdos con armadores de clase mundial—",
+      "4": "hasta la colocación final del producto. ",
+      "5": "Esta capacidad nos permite asegurar ",
+      "6": "un transporte marítimo eficiente y seguro ",
+      "7": "a puertos clave como Singapur, Zhoushan y Tanjung Pelepas."
+    },
+    "description_3": {
+      "1": "Una de nuestras mayores fortalezas radica en las ",
+      "2": "relaciones sólidas y duraderas ",
+      "3": "que hemos cultivado con ",
+      "4": "refinerías de última generación y distribuidores finales ",
+      "5": "en la dinámica región de ",
+      "6": "Asia-Pacífico ",
+      "7": "(China, Malasia, Vietnam, Laos, Tailandia, Camboya y Filipinas)."
+    },
+    "description_4": {
+      "1": "Nuestro equipo, compuesto por gerentes altamente cualificados, arquitectos navales, ingenieros y especialistas en gestión comercial, logística y riesgo, opera en un entorno que fomenta la excelencia. Esta integración de talento y experiencia garantiza la prestación de ",
+      "2": "servicios inigualables de gestión naval y comercialización, ",
+      "3": "respaldados por operaciones seguras y sostenibles. Estamos listos para desplegar esta vasta capacidad y conocimiento en su beneficio, forjando una alianza que optimice su acceso al mercado y maximice el valor de sus hidrocarburos."
+    }
+  },
+  "policies": {
+    "title": "Políticas",
+    "company": {
+      "title": "Concepto de Política de la Compañía",
+      "text": "En IPGC CONSULTORES SA, nuestras responsabilidades del Sistema Integrado de Gestión (SIG) permean cada nivel de la organización, desde el Director General hacia abajo. Fomentamos una cultura donde cada individuo está empoderado y se espera que asuma un papel personal y constructivo en impulsar operaciones globales altamente eficientes y efectivas. Todo el personal está completamente familiarizado e implementa activamente las Políticas y objetivos estratégicos de la Compañía, asegurando un compromiso unificado con la excelencia que sustenta nuestro liderazgo en la comercialización de hidrocarburos y la gestión integral de buques. Nuestra dedicación colectiva asegura una entrega de servicios impecable y una alineación inquebrantable con los intereses estratégicos de nuestros clientes."
+    },
+    "safety": {
+      "title": "Política de Seguridad",
+      "text": "La Dirección de IPGC CONSULTORES SA está inequívocamente comprometida con la implementación de todas las precauciones y medidas necesarias durante la operación de nuestros buques gestionados y en todas las actividades de comercialización. Nuestro objetivo primordial es garantizar una seguridad inquebrantable en el mar, prevenir lesiones humanas o pérdida de vidas, y mitigar cualquier daño potencial a la propiedad o la carga. Perseguimos incansablemente una visión de CERO incidentes a través de un enfoque proactivo y holístico para la gestión de la seguridad y la mejora operativa continua, reconociendo que un historial de seguridad impecable es fundamental para la confianza y la fiabilidad en el sector energético global."
+    },
+    "quality": {
+      "title": "Política de Calidad",
+      "text": "IPGC CONSULTORES SA se dedica a ganar y mantener la confianza absoluta de armadores, fletadores, gente de mar, nuestros estimados socios de refinerías y todas las partes interesadas en las industrias marítima y energética. Aspiramos a ser reconocidos mundialmente como un gestor de buques internacional y líder en comercialización de hidrocarburos de primera calidad y eminentemente confiable. Esta distinción se logra únicamente proporcionando servicios impecables y profesionales que superan constantemente todos los requisitos y expectativas relevantes. Estamos comprometidos a proteger meticulosamente los intereses de nuestros clientes y los invaluables activos bajo nuestro cuidado, asegurando que cada transacción, desde la gestión del buque hasta la entrega del producto, refleje nuestra dedicación a la excelencia, la precisión y el valor maximizado."
+    },
+    "environmental": {
+      "title": "Política Ambiental",
+      "text": "IPGC CONSULTORES SA está profundamente comprometida con esfuerzos incansables destinados a mejorar significativamente su desempeño ambiental en todas las facetas de nuestras operaciones, adhiriéndose rigurosamente a las regulaciones internacionales, leyes marítimas y nuestro robusto Sistema Integrado de Gestión (SIG) y Sistema de Gestión Ambiental (SGA). Nuestro objetivo inquebrantable es lograr Cero derrames o liberaciones al medio ambiente y una reducción continua de las emisiones permitidas. Esta dedicación subraya nuestra profunda responsabilidad como líder global en comercialización de energía para proteger los ecosistemas marinos y contribuir a un futuro sostenible, asegurando que cada operación se realice con el máximo cuidado ambiental."
+    },
+    "cyber": {
+      "title": "Política de Ciberseguridad",
+      "text": "El propósito central y objetivo de la Política de Ciberseguridad de IPGC CONSULTORES SA es salvaguardar integralmente los activos de información crítica de la compañía de todas las amenazas potenciales, ya sean internas o externas, deliberadas o accidentales. Nuestro marco robusto asegura la continuidad operativa ininterrumpida en la comercialización global de hidrocarburos, minimiza el daño potencial de incidentes cibernéticos y maximiza el retorno de las inversiones protegiendo la inteligencia de mercado sensible y los datos propietarios. Esta política es fundamental para mantener la confianza de nuestros clientes y socios, asegurar nuestra ventaja competitiva y capitalizar las oportunidades de la industria en evolución en un mercado energético global altamente interconectado."
+    },
+    "social": {
+      "title": "Política de Redes Sociales",
+      "text": "Esta política describe con precisión los principios esenciales y la conducta ética que todo el personal de IPGC CONSULTORES SA debe observar al interactuar con las redes sociales. Detalla las condiciones bajo las cuales la actividad en internet puede ser monitoreada para salvaguardar información comercial propietaria, proteger las relaciones con los clientes y mantener la reputación profesional impecable de la Compañía en el sector energético global. Además, esta política especifica claramente las acciones que se tomarán ante cualquier violación de estas pautas establecidas, reforzando nuestro compromiso con la integridad, la discreción y la presencia digital responsable como una entidad de comercialización y gestión de buques de clase mundial."
+    }
+  },
+  "services": {
+    "title": "Servicios",
+    "technical": {
+      "title": "Técnico",
+      "text": "En IPGC CONSULTORES SA, la base de nuestra exitosa gestión de buques y comercialización de hidrocarburos radica en nuestra inquebrantable adhesión a rigurosas regulaciones y estándares internacionales de la industria. Nuestro enfoque se caracteriza por un equipo bien planificado y proactivo dedicado al monitoreo y mantenimiento precisos de todos los buques, asegurando operaciones globales seguras y eficientes. Esto incluye presupuestos meticulosos e informes financieros transparentes, garantizando los más altos niveles de integridad operativa. Los principales fletadores, comerciantes líderes y compañías energéticas globales confían constantemente en la capacidad probada de IPGC para ofrecer servicios confiables y de alto rendimiento, un testimonio de nuestra excelencia técnica y la robusta salud de nuestra flota gestionada."
+    },
+    "operations": {
+      "title": "Operaciones",
+      "text": "Nuestro equipo de operaciones altamente experimentado en IPGC CONSULTORES SA está totalmente dedicado a gestionar las actividades diarias de los buques con los estándares más altos posibles, asegurando servicios de transporte de hidrocarburos globales sin interrupciones. Nos especializamos en coordinar logística marítima compleja para buques VLCC, Suezmax, Aframax y MR/LR, facilitando entregas eficientes a puertos estratégicos en todo el mundo, incluidos centros clave en Asia-Pacífico. Nuestro compromiso inquebrantable se extiende a promover operaciones seguras y limpias con cero contaminación y mínimo impacto ambiental, priorizando al mismo tiempo la salud, seguridad y protección de nuestra gente de mar. Esta dedicación nos permite construir y mantener relaciones duraderas con los clientes, reflejando nuestra fiabilidad y compromiso con la excelencia operativa en cada viaje."
+    },
+    "safety_quality": {
+      "title": "Seguridad y Calidad",
+      "text": "Guiados por un conjunto de valores intransigentes, IPGC CONSULTORES SA se esfuerza incansablemente por superar toda la legislación y regulaciones aplicables, junto con la mejora continua en las leyes de salud, seguridad y medio ambiente. Nuestra máxima prioridad es la seguridad y el bienestar de todo el personal de IPGC, tanto a bordo de nuestros buques gestionados como dentro de nuestras oficinas globales. Este compromiso se refuerza activamente a través de constantes Campañas de Seguridad, Informes de Análisis meticulosos y Boletines de la Compañía trimestrales informativos. Mantenemos un monitoreo continuo de todos los aspectos de seguridad y salud ocupacional en nuestra flota, proporcionando todos los recursos necesarios para mantener nuestro historial de seguridad impecable y ofrecer una calidad de servicio de clase mundial en la comercialización de hidrocarburos y la gestión de buques."
+    },
+    "commercial": {
+      "title": "Comercial",
+      "text": "El equipo comercial de IPGC CONSULTORES SA está compuesto por profesionales de fletamento altamente experimentados y con una amplia red de contactos, especializados en el intrincado sector de buques para el transporte de hidrocarburos. Nuestra experiencia nos permite negociar expertamente, identificar oportunidades de empleo de primer nivel y asegurar contratos óptimos para los buques gestionados por IPGC. Nos involucramos activamente con las principales compañías petroleras y comerciantes internacionales tanto en el dinámico mercado spot como a través de fletamentos estratégicos a largo plazo, asegurando la colocación rentable de crudo y derivados a socios de refinería clave en regiones como Asia-Pacífico. Nuestra profunda comprensión de la dinámica del mercado y las sólidas relaciones con los clientes aseguran un valor maximizado y un éxito comercial sostenido para nuestros socios armadores."
+    }
+  },
+  "contact": {
+    "title": "Contáctanos",
+    "text": "¿Tienes una pregunta, comentario o sugerencia? Nos encantaría saber de ti. Por favor, no dudes en contactarnos usando el botón de abajo",
+    "button": "Click Aqui"
+  },
+  "footer": {
+    "location": "Ciudad de Panamá, Panamá"
+  },
+  "auth_docs": {
+    "loading": "Verificando Documento...",
+    "title_bad": "Documento Invalido",
+    "instruction": "Por favor espera mientras verificamos la autenticidad del documento.",
+    "text_bad": "Este documento ha sido revocado",
+    "text_not_found": "El documento que buscas no pudo ser verificado. El token proporcionado es inválido o no existe en nuestros registros.",
+    "text_error": "Ocurrió un error al verificar el documento. Por favor, inténtalo de nuevo más tarde.",
+    "title_ok": "Documento Verificado",
+    "text_ok": "Este documento es válido y está registrado en nuestro sistema.",
+    "document_id": "ID DEL DOCUMENTO",
+    "status": "ESTADO",
+    "document_type": "TIPO DE DOCUMENTO",
+    "date_issued": "Fecha de Emisión",
+    "due_date": "VÁLIDO HASTA",
+    "client": "CLIENTE / BENEFICIARIO",
+    "go_home": "Ir al Inicio"
+  }
+}

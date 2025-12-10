@@ -6,6 +6,7 @@ import Layout from '../components/layout/Layout';
 import Card from '../components/Card';
 import Button from '../components/Button';
 import { useTheme } from '../hooks/useTheme';
+import { useTranslation } from 'react-i18next';
 
 const AuthDocs = () => {
   const { themeStyles } = useTheme();
@@ -13,6 +14,7 @@ const AuthDocs = () => {
   const [docData, setDocData] = useState(null);
   const [isValid, setIsValid] = useState(false);
   const [errorMessage, setErrorMessage] = useState('');
+  const { t } = useTranslation();
 
   useEffect(() => {
     const verifyToken = async () => {
@@ -44,7 +46,7 @@ const AuthDocs = () => {
 
             if (doc.dueDate && doc.dueDate < currentDate) {
               setIsValid(false);
-              setErrorMessage('This document has been revoked');
+              setErrorMessage('auth_docs.text_bad');
             } else {
               setDocData(doc);
               setIsValid(true);
@@ -52,19 +54,17 @@ const AuthDocs = () => {
           } else {
             // Document exists but is not active
             setIsValid(false);
-            setErrorMessage('This document has been revoked');
+            setErrorMessage('auth_docs.text_bad');
           }
         } else {
           // Document not found
           setIsValid(false);
-          setErrorMessage(
-            'The document you are looking for could not be verified. The token provided is invalid or does not exist in our records.'
-          );
+          setErrorMessage('auth_docs.text_not_found');
         }
       } catch (error) {
         console.error('Error verifying document:', error);
         setIsValid(false);
-        setErrorMessage('An error occurred while verifying the document. Please try again later.');
+        setErrorMessage('auth_docs.text_error');
       } finally {
         setLoading(false);
       }
@@ -80,11 +80,9 @@ const AuthDocs = () => {
           {loading && (
             <Card className="text-center">
               <h2 className={`text-2xl font-bold ${themeStyles.textSecondary}`}>
-                Verifying Document...
+                {t('auth_docs.loading')}
               </h2>
-              <p className={`mt-4 ${themeStyles.textPrimary}`}>
-                Please wait while we check the authenticity of the document.
-              </p>
+              <p className={`mt-4 ${themeStyles.textPrimary}`}>{t('auth_docs.instruction')}</p>
             </Card>
           )}
 
@@ -107,20 +105,22 @@ const AuthDocs = () => {
                 </svg>
               </div>
               <h1 className={`text-3xl font-bold mb-2 ${themeStyles.textSecondary}`}>
-                Authentic Document
+                {t('auth_docs.title_ok')}
               </h1>
-              <p className="text-green-600 font-semibold mb-8">
-                This document is valid and registered in our system.
-              </p>
+              <p className="text-green-600 font-semibold mb-8">{t('auth_docs.text_ok')}</p>
 
               <div className={`text-left bg-opacity-10 p-6 rounded-lg ${themeStyles.background} `}>
                 <div className={`grid grid-cols-1 md:grid-cols-2 gap-4`}>
                   <div>
-                    <p className="text-xs uppercase tracking-wider opacity-70">Document ID</p>
+                    <p className="text-xs uppercase tracking-wider opacity-70">
+                      {t('auth_docs.document_id')}
+                    </p>
                     <p className="font-mono font-bold text-lg">{docData.id}</p>
                   </div>
                   <div>
-                    <p className="text-xs uppercase tracking-wider opacity-70">Status</p>
+                    <p className="text-xs uppercase tracking-wider opacity-70">
+                      {t('auth_docs.status')}
+                    </p>
                     <span
                       className={`inline-block px-2 py-1 rounded text-xs font-bold ${
                         docData.status === 'Active'
@@ -132,22 +132,28 @@ const AuthDocs = () => {
                     </span>
                   </div>
                   <div>
-                    <p className="text-xs uppercase tracking-wider opacity-70">Document Type</p>
+                    <p className="text-xs uppercase tracking-wider opacity-70">
+                      {t('auth_docs.document_type')}
+                    </p>
                     <p className="font-semibold">{docData.type}</p>
                   </div>
                   <div>
-                    <p className="text-xs uppercase tracking-wider opacity-70">Date Issued</p>
+                    <p className="text-xs uppercase tracking-wider opacity-70">
+                      {t('auth_docs.date_issued')}
+                    </p>
                     <p className="font-semibold">{docData.date}</p>
                   </div>
                   {docData.dueDate && (
                     <div>
-                      <p className="text-xs uppercase tracking-wider opacity-70">Valid Until</p>
+                      <p className="text-xs uppercase tracking-wider opacity-70">
+                        {t('auth_docs.due_date')}
+                      </p>
                       <p className="font-semibold text-red-500">{docData.dueDate}</p>
                     </div>
                   )}
                   <div className="md:col-span-2">
                     <p className="text-xs uppercase tracking-wider opacity-70">
-                      Client / Beneficiary
+                      {t('auth_docs.client')}
                     </p>
                     <p className="font-semibold text-xl">{docData.client}</p>
                   </div>
@@ -175,15 +181,15 @@ const AuthDocs = () => {
                 </svg>
               </div>
               <h1 className={`text-3xl font-bold mb-4 ${themeStyles.textSecondary}`}>
-                Document Invalid
+                {t('auth_docs.title_bad')}
               </h1>
-              <p className={`mb-8 ${themeStyles.textPrimary}`}>{errorMessage}</p>
+              <p className={`mb-8 ${themeStyles.textPrimary}`}>{t(errorMessage)}</p>
             </Card>
           )}
 
           <div className="mt-12 text-center">
             <Link to="/">
-              <Button size="lg">Go to IPGC Home</Button>
+              <Button size="lg">{t('auth_docs.go_home')}</Button>
             </Link>
           </div>
         </div>

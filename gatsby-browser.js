@@ -1,4 +1,5 @@
 import './src/css/tailwind.css';
+import './src/i18n';
 import React from 'react';
 import { ThemeProvider } from './src/hooks/useTheme';
 

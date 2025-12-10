@@ -6,11 +6,14 @@ import Button from '../Button';
 import { useTheme } from '../../hooks/useTheme';
 import DarkModeToggle from '../DarkModeToggle';
 import { Link } from 'gatsby';
+import LanguageToggle from '../LanguageToggle';
+import { useTranslation } from 'react-i18next';
 
 const pathnamesWithoutHeader = ['/auth-docs/', '/admin/'];
 
 const Header = () => {
   const { themeStyles, theme } = useTheme();
+  const { t } = useTranslation();
   // Initialize path safely
   const [path, setPath] = useState('');
 
@@ -52,26 +55,29 @@ const Header = () => {
                   className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`}
                   href="#features"
                 >
-                  Policies
+                  {t('header.policies')}
                 </AnchorLink>
                 <AnchorLink
                   offset={100}
                   className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`}
                   href="#services"
                 >
-                  Services
+                  {t('header.services')}
                 </AnchorLink>
                 <AnchorLink
                   offset={200}
                   className={`px-4 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`}
                   href="#contact"
                 >
-                  Contact
+                  {t('header.contact')}
                 </AnchorLink>
               </>
             )}
             <div className="">
               <DarkModeToggle />
+            </div>
+            <div className=" flex items-center">
+              <LanguageToggle />
             </div>
           </div>
         </div>
