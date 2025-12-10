@@ -19,7 +19,7 @@ const LanguageToggle = () => {
       className={`px-4 font-bold uppercase transition-colors duration-200 ${themeStyles.headerText} hover:${themeStyles.headerHoverText}`}
       title="Switch Language"
     >
-      {i18n.language === 'en' ? <USFlag /> : <ESFlag />}
+      {i18n.language === 'es' ? <ESFlag /> : <USFlag />}
     </button>
   );
 };

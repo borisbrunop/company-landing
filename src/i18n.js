@@ -19,9 +19,13 @@ i18n
   .use(initReactI18next)
   .init({
     resources,
+    lng: 'en', // Force a default language immediately
     fallbackLng: 'en',
     interpolation: {
-      escapeValue: false, // react already safes from xss
+      escapeValue: false,
+    },
+    react: {
+      useSuspense: false, // This is crucial for Gatsby/SSR to avoid waiting
     },
   });
 
