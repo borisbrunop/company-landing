@@ -102,7 +102,7 @@
     "text_bad": "This document has been revoked",
     "text_not_found": "The document you are looking for could not be verified. The token provided is invalid or does not exist in our records.",
     "text_error": "An error occurred while verifying the document. Please try again later.",
-    "title": "Authentic Document",
+    "title_ok": "Authentic Document",
     "text_ok": "This document is valid and registered in our system.",
     "document_id": "DOCUMENT ID",
     "status": "STATUS",
